@@ -1,0 +1,774 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@900&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Bebas+Neue&family=Raleway:wght@300;900&family=Roboto:wght@300&display=swap');
+ 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: "Poppins Sans, sans-serif";
+    font-size: 1.2rem;
+    min-height: 100%;
+    overflow-x: hidden;
+    background-color: rgb(240, 240, 240);
+}
+
+.grid-container-index >* {
+    text-align: center;
+}
+
+
+.header{
+    grid-area: header;
+    background-color: rgba(0, 0, 0, 0.93);
+    border-bottom: solid 1px white;
+}
+
+.navbar{
+    grid-area: navbar;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(https://www.hdcarwallpapers.com/walls/lamborghini_aventador_interior_cgi-HD.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-bottom: ridge 3px black;
+}
+
+
+.main{
+    grid-area: main;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.10wallpaper.com/wallpaper/2560x1600/1408/lamborghini_gray-car_HD_Wallpaper_2560x1600.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.grid-container-index {
+    display: grid;
+   grid-template:
+        "header" 60px
+        "navbar" 260px
+        "main" 620px
+        "renta-tuauto-ahora" 400px
+        "nuestros-programas" 820px
+        "porque-elegirnos" 210px
+        "reserva" 480px
+        "footer" 180px;
+}
+
+/*PROPIEDADES GENERALES*/
+
+.h1-contacto{
+    margin-top: 50px;
+}
+
+.form-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.custom-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.custom-col {
+    flex: 1;
+    margin-right: 10px;
+}
+
+label {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    padding: 5px 10px;
+    border: none;
+    background-color: #337ab7;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#nosotros-bi{
+    padding-top: 100px;
+}
+
+button { 
+    font-weight: bold;
+    background-color: rgb(255, 0, 0);
+    border: none;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1.2rem !important;
+    color: rgb(255, 255, 255);
+    padding: 10px !important;
+    cursor: pointer;
+  }
+
+.button-reserva{
+    margin-top: 20px;
+}
+
+  button:hover {
+    background-color: rgb(16, 15, 100);
+    border: 1px rgb(16, 15, 100);
+    transition: background-color 0.4s ease;
+  }
+
+  .caracteristicas-img{
+    display: none;
+  }
+
+
+/*HEADER*/
+
+#menu-cabecera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 25px;
+    font-size: 20px;
+}
+
+a:hover{
+    color: brown !important;
+    transition: color 0.3s ease !important;
+}
+
+
+
+/*NAVBAR Y LOGO*/
+
+.logo{  
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    cursor: pointer;
+}
+
+a{
+    color: white !important;
+    text-decoration: none !important; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px !important;
+}
+
+  
+ul li {
+    display: inline-block !important;
+    margin: 8px !important;
+}
+  
+.nav-button {
+    display: inline-block !important;
+    padding: 10px 20px !important;
+    margin-top: 10px !important;
+    background-color: #333;
+    color: #fff; 
+    text-decoration: none;
+}
+
+/*HERO*/
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+h2 {
+    font-size: 0.8em;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*SIDEBAR*/
+
+
+/*RENTA TU AUTO AHORA!*/
+
+#somos-pulse .container{
+    padding: 50px 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h3{
+    margin-bottom: 10px;
+}
+
+/*NUESTROS PROGRAMAS!*/
+
+#nuestros-programas{
+    background-color: rgb(30,30,30);
+    height: 90vh;
+  }
+  
+#nuestros-programas h4{
+    font-size: 1.6em;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+  
+#nuestros-programas p{
+    display: none;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0px 10px;
+}
+  
+#nuestros-programas .carta{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 30px;
+    margin: 12px 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+  
+.carta:nth-child(1){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80)
+
+}
+  
+.carta:nth-child(2){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1283&q=80);
+}
+
+
+/*CARACTERISTICAS - POR QUE ELEGIRNOS*/
+
+#fondo-caracteristicas{
+    display: none;
+}
+
+#caracteristicas .container{
+    text-align: center;
+}
+
+.container h3{
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container li{
+    margin: 10px 140px !important;
+    font-family: 'Roboto', sans-serif !important;
+    display: inline-block !important;
+}
+
+/*RESERVA*/
+
+.reserva{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 25em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.supercars.net/blog/wp-content/uploads/2020/09/wallpaperflare.com_wallpaper-1-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container h6{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+h5{
+    color: black !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: bold !important;
+    font-size: 1.5em !important;
+}
+
+h6{
+    color: white !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: bold !important;
+    font-size: 1.9em !important;
+}
+
+
+/*FOOTER*/
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+  }
+  
+  h3 {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .social-icons a:hover {
+    color: #ccc;
+  } 
+
+/*PAGINA: VEHICULOS ----------------------------------------*/
+
+.navbar{
+    background-position: center !important;
+}
+
+
+@media (min-width: 890px){
+    .grid-container-index{
+        grid-template:
+        "header" 60px
+        "navbar" 240px
+        "main" 620px
+        "renta-tuauto-ahora" 400px
+        "nuestros-programas" 820px
+        "porque-elegirnos" 0px
+        "reserva" 500px
+    }
+    #caracteristicas{
+        display: none;
+    }
+
+    #nuestros-programas{
+        background-color: rgb(30,30,30);
+        color: white;
+        text-align: center;
+        height: 177vh;
+      }
+
+      .catalogo {
+        padding: 10px;
+      }
+
+
+
+    }   
+
+
+
+@media (min-width: 1050px){
+    .grid-container-index{
+        grid-template: 
+        "header" 60px
+        "navbar" 240px
+        "main" 620px
+        "renta-tuauto-ahora" 600px
+        "nuestros-programas" 650px
+        "porque-elegirnos" 210px
+        "reserva" 500px
+        "footer" 200px;
+    }
+
+h1{font-size: 2.1em;}
+h2{font-size: 0.9em;}
+
+
+/*RENTA TU AUTO AHORA*/
+
+#somos-pulse .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+  #somos-pulse .texto{
+    width: 100%;
+    max-width: 550px;
+    text-align: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+    margin-right: 95px;
+}
+
+ #somos-pulse .img-container{
+    background-image: url(https://images.wallpaperscraft.com/image/single/bmw_i8_bmw_car_315923_1920x1080.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 35%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/*NUESTROS PROGRAMAS*/
+
+#nuestros-programas{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+    height: 158vh;
+  }
+
+  #nuestros-programas .programas{
+    display: flex;
+    justify-content: center;
+    height: 75vh;
+    margin: 0 4em;
+  }
+
+  #nuestros-programas h4{
+    margin-bottom: 30px;
+    padding: 0 0 12px 0;
+  }
+
+  #nuestros-programas p{
+    display: block;
+    justify-content: center;
+    height: 30vh;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    overflow-y: hidden;
+  }
+
+  #nuestros-programas .carta{
+    padding: 50px;
+    background-repeat: no-repeat;
+    background-color: rgb(50,50,50);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    
+  }
+
+}
+
+
+@media (min-width: 1400px){
+    @media (min-width: 1150px){
+        .grid-container-index{
+            grid-template: 
+            "header" 60px
+            "navbar" 250px
+            "main" 620px
+            "renta-tuauto-ahora" 600px
+            "nuestros-programas" 650px
+            "porque-elegirnos" 210px
+            "reserva" 500px
+            "footer" 200px;
+        }
+    }
+
+    h1{font-size: 2.1em;}
+    h2{font-size: 0.9em;}
+    
+    #caracteristicas{
+        display: none;
+    }
+
+    .navbar{
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 0px 150px !important;
+    }
+
+}
+
+/*GRID VEHICULOS--------------------------------*/
+
+.grid-container-vehiculos >* {
+    text-align: center;
+}
+
+.grid-container-vehiculos{
+    display: grid;
+    grid-template:
+         "header" 60px
+         "navbar" 260px
+         "main" 4000px
+         "reserva" 480px
+         "footer" 280px;
+
+}
+
+@media (min-width: 600px){
+    .grid-container-vehiculos{
+        grid-template:
+        "header" 60px
+        "navbar" 240px
+        "main" 2800px
+        "reserva" 500px
+        "footer" 280px;
+    }
+}
+
+@media (min-width: 800px){
+    .grid-container-vehiculos{
+        grid-template:
+        "header" 60px
+        "navbar" 240px
+        "main" 2000px
+        "reserva" 500px
+    }
+}
+
+@media (min-width: 1050px){
+    .grid-container-vehiculos{
+        grid-template: 
+        "header" 60px
+        "navbar" 240px
+        "main" 1950px
+        "reserva" 500px
+        "footer" 250px;
+    }
+}
+
+@media (min-width: 1400px){
+    @media (min-width: 1150px){
+        .grid-container-vehiculos{
+            grid-template: 
+            "header" 60px
+            "navbar" 250px
+            "main" 1820px
+            "reserva" 500px
+            "footer" 240px;
+        }
+    }
+}
+
+
+/*GRID NOSOTROS-------------------------------*/
+
+.grid-container-nosotros >* {
+    text-align: center;
+}
+
+.grid-container-nosotros{
+    display: grid;
+    grid-template:
+         "header" 60px
+         "navbar" 260px
+         "main" 3100px
+         "footer" 280px;
+
+}
+
+@media (min-width: 600px){
+    .grid-container-nosotros{
+        grid-template:
+        "header" 60px
+        "navbar" 240px
+        "main" 3200px
+        "footer" 280px;
+    }
+}
+
+@media (min-width: 800px){
+    .grid-container-nosotros{
+        grid-template:
+        "header" 60px
+        "navbar" 240px
+        "main" 2000px
+        "footer" 280px;
+    }
+}
+
+@media (min-width: 920px){
+    .grid-container-nosotros{
+        grid-template: 
+        "header" 60px
+        "navbar" 240px
+        "main" 2000px
+        "footer" 250px;
+    }
+}
+
+@media (min-width: 980px){
+    .grid-container-nosotros{
+        grid-template: 
+        "header" 60px
+        "navbar" 240px
+        "main" 1800px
+        "footer" 250px;
+    }
+}
+
+@media (min-width: 1200px){
+    @media (min-width: 1150px){
+        .grid-container-nosotros{
+            grid-template: 
+            "header" 60px
+            "navbar" 250px
+            "main" 2120px
+            "footer" 240px;
+        }
+    }
+}
+
+/*GRID CONTACTO-------------------------------*/
+
+.grid-container-contacto >* {
+    text-align: center;
+}
+
+.grid-container-contacto{
+    display: grid;
+    grid-template:
+         "header" 60px
+         "navbar" 260px
+         "main" 620px
+         "renta-tuauto-ahora" 400px
+         "nuestros-programas" 820px
+         "porque-elegirnos" 210px
+         "reserva" 480px
+         "footer" 180px;
+
+}
+
+
+@media (min-width: 890px){
+    .grid-container-contacto{
+        grid-template:
+        "header" 60px
+        "navbar" 240px
+        "main" 620px
+        "renta-tuauto-ahora" 400px
+        "nuestros-programas" 820px
+        "porque-elegirnos" 0px
+        "reserva" 500px
+    }
+}
+
+@media (min-width: 1050px){
+    .grid-container-contacto{
+        grid-template: 
+        "header" 60px
+        "navbar" 240px
+        "main" 620px
+        "renta-tuauto-ahora" 600px
+        "nuestros-programas" 650px
+        "porque-elegirnos" 210px
+        "reserva" 500px
+        "footer" 200px;
+    }
+}
+
+@media (min-width: 1400px){
+    @media (min-width: 1150px){
+        .grid-container-contacto{
+            grid-template: 
+            "header" 60px
+            "navbar" 250px
+            "main" 620px
+            "renta-tuauto-ahora" 600px
+            "nuestros-programas" 650px
+            "porque-elegirnos" 210px
+            "reserva" 500px
+            "footer" 200px;
+        }
+    }
+}
+
+/*GRID RENTAR--------------------------------*/
+
+.grid-container-rentar >* {
+    text-align: center;
+}
+
+.grid-container-rentar{
+    display: grid;
+    grid-template:
+         "header" 60px
+         "navbar" 260px
+         "main" 4000px
+         "footer" 280px;
+
+}
+
+@media (min-width: 600px){
+    .grid-container-rentar{
+        grid-template:
+        "header" 60px
+        "navbar" 240px
+        "main" 2800px
+        "footer" 280px;
+    }
+}
+
+@media (min-width: 800px){
+    .grid-container-rentar{
+        grid-template:
+        "header" 60px
+        "navbar" 240px
+        "main" 2000px
+        "footer" 250px;
+    }
+}
+
+@media (min-width: 1050px){
+    .grid-container-rentar{
+        grid-template: 
+        "header" 60px
+        "navbar" 240px
+        "main" 1950px
+        "footer" 250px;
+    }
+}
+
+@media (min-width: 1400px){
+    @media (min-width: 1150px){
+        .grid-container-rentar{
+            grid-template: 
+            "header" 60px
+            "navbar" 250px
+            "main main" 1820px
+            "footer" 240px;
+        }
+    }
+}
