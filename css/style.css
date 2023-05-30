@@ -82,6 +82,10 @@ body{
     margin: 0 auto;
 }
 
+.team{
+    border-radius: 20px;
+}
+
 .custom-row {
     display: flex;
     justify-content: space-between;
@@ -490,7 +494,6 @@ h2{font-size: 0.9em;}
 
 
 @media (min-width: 1400px){
-    @media (min-width: 1150px){
         .grid-container-index{
             grid-template: 
             "header" 60px
@@ -502,7 +505,6 @@ h2{font-size: 0.9em;}
             "reserva" 500px
             "footer" 200px;
         }
-    }
 
     h1{font-size: 2.1em;}
     h2{font-size: 0.9em;}
@@ -531,9 +533,10 @@ h2{font-size: 0.9em;}
     grid-template:
          "header" 60px
          "navbar" 260px
-         "main" 4000px
+         "main" 4750px
          "reserva" 480px
-         "footer" 280px;
+         "footer" 280px /
+         483px;
 
 }
 
@@ -570,88 +573,19 @@ h2{font-size: 0.9em;}
 }
 
 @media (min-width: 1400px){
-    @media (min-width: 1150px){
         .grid-container-vehiculos{
             grid-template: 
             "header" 60px
             "navbar" 250px
-            "main" 1820px
+            "main" 2020px
             "reserva" 500px
             "footer" 240px;
         }
-    }
 }
+
 
 
 /*GRID NOSOTROS-------------------------------*/
-
-.grid-container-nosotros >* {
-    text-align: center;
-}
-
-.grid-container-nosotros{
-    display: grid;
-    grid-template:
-         "header" 60px
-         "navbar" 260px
-         "main" 3100px
-         "footer" 280px;
-
-}
-
-@media (min-width: 600px){
-    .grid-container-nosotros{
-        grid-template:
-        "header" 60px
-        "navbar" 240px
-        "main" 3200px
-        "footer" 280px;
-    }
-}
-
-@media (min-width: 800px){
-    .grid-container-nosotros{
-        grid-template:
-        "header" 60px
-        "navbar" 240px
-        "main" 2000px
-        "footer" 280px;
-    }
-}
-
-@media (min-width: 920px){
-    .grid-container-nosotros{
-        grid-template: 
-        "header" 60px
-        "navbar" 240px
-        "main" 2000px
-        "footer" 250px;
-    }
-}
-
-@media (min-width: 980px){
-    .grid-container-nosotros{
-        grid-template: 
-        "header" 60px
-        "navbar" 240px
-        "main" 1800px
-        "footer" 250px;
-    }
-}
-
-@media (min-width: 1200px){
-    @media (min-width: 1150px){
-        .grid-container-nosotros{
-            grid-template: 
-            "header" 60px
-            "navbar" 250px
-            "main" 2120px
-            "footer" 240px;
-        }
-    }
-}
-
-/*GRID CONTACTO-------------------------------*/
 
 .grid-container-contacto >* {
     text-align: center;
@@ -663,9 +597,6 @@ h2{font-size: 0.9em;}
          "header" 60px
          "navbar" 260px
          "main" 620px
-         "renta-tuauto-ahora" 400px
-         "nuestros-programas" 820px
-         "porque-elegirnos" 210px
          "reserva" 480px
          "footer" 180px;
 
@@ -700,7 +631,6 @@ h2{font-size: 0.9em;}
 }
 
 @media (min-width: 1400px){
-    @media (min-width: 1150px){
         .grid-container-contacto{
             grid-template: 
             "header" 60px
@@ -712,7 +642,64 @@ h2{font-size: 0.9em;}
             "reserva" 500px
             "footer" 200px;
         }
+}
+
+
+/*GRID CONTACTO-------------------------------*/
+
+.grid-container-nosotros >* {
+    text-align: center;
+}
+
+.grid-container-nosotros{
+    display: grid;
+    grid-template:
+         "header" 60px
+         "navbar" 260px
+         "main" 4220px
+         "footer" 280px;
+
+}
+
+@media (min-width: 500px){
+    .grid-container-nosotros{
+        grid-template:
+        "header" 60px
+        "navbar" 240px
+        "main" 4150px
+        "footer" 300px
     }
+}
+
+@media (min-width: 790px){
+    .grid-container-nosotros{
+        grid-template:
+        "header" 60px
+        "navbar" 240px
+        "main" 3080px
+        "footer" 280px
+    }
+}
+
+@media (min-width: 1050px){
+    .grid-container-nosotros{
+        grid-template: 
+        "header" 60px
+        "navbar" 240px
+        "main" 2120px
+        "footer" 300px;
+    }
+}
+
+@media (min-width: 1400px){
+    .grid-container-nosotros{
+        grid-template: 
+        "header" 60px
+        "navbar" 240px
+        "main" 2120px
+        "footer" 300px;
+    }
+    
 }
 
 /*GRID RENTAR--------------------------------*/
@@ -766,9 +753,9 @@ h2{font-size: 0.9em;}
         .grid-container-rentar{
             grid-template: 
             "header" 60px
-            "navbar" 250px
-            "main main" 1820px
-            "footer" 240px;
+            "navbar" 240px
+            "main" 3950px
+            "footer" 550px;
         }
     }
 }
