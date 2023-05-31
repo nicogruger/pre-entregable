@@ -58,18 +58,6 @@ body{
     grid-area: footer;
 }
 
-.grid-container-index {
-    display: grid;
-   grid-template:
-        "header" 60px
-        "navbar" 260px
-        "main" 620px
-        "renta-tuauto-ahora" 400px
-        "nuestros-programas" 820px
-        "porque-elegirnos" 210px
-        "reserva" 480px
-        "footer" 180px;
-}
 
 /*PROPIEDADES GENERALES*/
 
@@ -368,6 +356,18 @@ footer {
     background-position: center !important;
 }
 
+.grid-container-index {
+    display: grid;
+   grid-template:
+        "header" 60px
+        "navbar" 260px
+        "main" 620px
+        "renta-tuauto-ahora" 400px
+        "nuestros-programas" 820px
+        "porque-elegirnos" 210px
+        "reserva" 480px
+        "footer" 250px;
+}
 
 @media (min-width: 890px){
     .grid-container-index{
@@ -394,12 +394,7 @@ footer {
       .catalogo {
         padding: 10px;
       }
-
-
-
-    }   
-
-
+ 
 
 @media (min-width: 1050px){
     .grid-container-index{
@@ -411,8 +406,25 @@ footer {
         "nuestros-programas" 650px
         "porque-elegirnos" 210px
         "reserva" 500px
-        "footer" 200px;
+        "footer" 260px;
     }
+}
+
+@media (min-width: 1550px){
+    .grid-container-index{
+        grid-template: 
+        "header" 60px
+        "navbar" 240px
+        "main" 620px
+        "renta-tuauto-ahora" 600px
+        "nuestros-programas" 650px
+        "porque-elegirnos" 210px
+        "reserva" 500px
+        "footer" 320px;
+    }
+}
+
+
 
 h1{font-size: 2.1em;}
 h2{font-size: 0.9em;}
@@ -538,7 +550,7 @@ h2{font-size: 0.9em;}
         grid-template:
         "header" 60px
         "navbar" 240px
-        "main" 2800px
+        "main" 2100px
         "reserva" 500px
         "footer" 280px;
     }
@@ -549,17 +561,39 @@ h2{font-size: 0.9em;}
         grid-template:
         "header" 60px
         "navbar" 240px
-        "main" 2000px
+        "main" 1500px
         "reserva" 500px
     }
 }
 
-@media (min-width: 1050px){
+@media (min-width: 980px){
     .grid-container-vehiculos{
         grid-template: 
         "header" 60px
         "navbar" 240px
-        "main" 1950px
+        "main" 1650px
+        "reserva" 500px
+        "footer" 250px;
+    }
+}
+
+@media (min-width: 1000px){
+    .grid-container-vehiculos{
+        grid-template: 
+        "header" 60px
+        "navbar" 240px
+        "main" 1800px
+        "reserva" 500px
+        "footer" 250px;
+    }
+}
+
+@media (min-width: 1300px){
+    .grid-container-vehiculos{
+        grid-template: 
+        "header" 60px
+        "navbar" 240px
+        "main" 1800px
         "reserva" 500px
         "footer" 250px;
     }
@@ -655,7 +689,7 @@ h2{font-size: 0.9em;}
         grid-template:
         "header" 60px
         "navbar" 260px
-        "main" 1520px
+        "main" 1650px
         "footer" 400px;
     }
 }
@@ -665,7 +699,7 @@ h2{font-size: 0.9em;}
         grid-template:
         "header" 60px
         "navbar" 260px
-        "main" 1450px
+        "main" 1550px
         "footer" 395px
     }
 }
@@ -755,3 +789,6 @@ h2{font-size: 0.9em;}
             "footer" 400px;
     }
 }
+
+
+/*FINALIZADO/*
