@@ -73,59 +73,51 @@ body{
 
 /*PROPIEDADES GENERALES*/
 
-.h1-contacto{
-    margin-top: 50px;
-}
-
-.form-container {
-    max-width: 1100px;
-    margin: 0 auto;
-}
 
 .team{
     border-radius: 20px;
 }
 
-.custom-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+/*CONTACTO*/
+
+.h1-contacto{
+    margin-top: 50px;
 }
 
-.custom-col {
-    flex: 1;
-    margin-right: 10px;
-}
-
-label {
-    display: block;
-    text-align: center;
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
     font-weight: bold;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
+    display: flex;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
     width: 100%;
-    padding: 5px;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-}
-
-input[type="submit"] {
-    display: inline-block;
-    padding: 5px 10px;
-    border: none;
-    background-color: #337ab7;
-    color: #fff;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-#nosotros-bi{
-    padding-top: 100px;
-}
+    max-width: 700px;
+    max-height: 150px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block;
+  }
+  
+  .map-container {
+    padding: 80px;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    padding: 30px;
+  }
 
 button { 
     font-weight: bold;
@@ -351,9 +343,9 @@ h6{
 /*FOOTER*/
 
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 30px 0;
+    background-color: #333 !important;
+    color: #fff !important;
+    padding: 30px !important;
   }
   
   h3 {
@@ -370,7 +362,7 @@ footer {
     color: #ccc;
   } 
 
-/*PAGINA: VEHICULOS ----------------------------------------*/
+
 
 .navbar{
     background-position: center !important;
@@ -506,6 +498,7 @@ h2{font-size: 0.9em;}
             "footer" 200px;
         }
 
+
     h1{font-size: 2.1em;}
     h2{font-size: 0.9em;}
     
@@ -533,7 +526,7 @@ h2{font-size: 0.9em;}
     grid-template:
          "header" 60px
          "navbar" 260px
-         "main" 4750px
+         "main" 4580px
          "reserva" 480px
          "footer" 280px /
          483px;
@@ -576,7 +569,7 @@ h2{font-size: 0.9em;}
         .grid-container-vehiculos{
             grid-template: 
             "header" 60px
-            "navbar" 250px
+            "navbar" 260px
             "main" 2020px
             "reserva" 500px
             "footer" 240px;
@@ -584,68 +577,7 @@ h2{font-size: 0.9em;}
 }
 
 
-
 /*GRID NOSOTROS-------------------------------*/
-
-.grid-container-contacto >* {
-    text-align: center;
-}
-
-.grid-container-contacto{
-    display: grid;
-    grid-template:
-         "header" 60px
-         "navbar" 260px
-         "main" 620px
-         "reserva" 480px
-         "footer" 180px;
-
-}
-
-
-@media (min-width: 890px){
-    .grid-container-contacto{
-        grid-template:
-        "header" 60px
-        "navbar" 240px
-        "main" 620px
-        "renta-tuauto-ahora" 400px
-        "nuestros-programas" 820px
-        "porque-elegirnos" 0px
-        "reserva" 500px
-    }
-}
-
-@media (min-width: 1050px){
-    .grid-container-contacto{
-        grid-template: 
-        "header" 60px
-        "navbar" 240px
-        "main" 620px
-        "renta-tuauto-ahora" 600px
-        "nuestros-programas" 650px
-        "porque-elegirnos" 210px
-        "reserva" 500px
-        "footer" 200px;
-    }
-}
-
-@media (min-width: 1400px){
-        .grid-container-contacto{
-            grid-template: 
-            "header" 60px
-            "navbar" 250px
-            "main" 620px
-            "renta-tuauto-ahora" 600px
-            "nuestros-programas" 650px
-            "porque-elegirnos" 210px
-            "reserva" 500px
-            "footer" 200px;
-        }
-}
-
-
-/*GRID CONTACTO-------------------------------*/
 
 .grid-container-nosotros >* {
     text-align: center;
@@ -661,12 +593,12 @@ h2{font-size: 0.9em;}
 
 }
 
-@media (min-width: 500px){
+@media (min-width: 400px){
     .grid-container-nosotros{
         grid-template:
         "header" 60px
-        "navbar" 240px
-        "main" 4150px
+        "navbar" 260px
+        "main" 4250px
         "footer" 300px
     }
 }
@@ -695,11 +627,77 @@ h2{font-size: 0.9em;}
     .grid-container-nosotros{
         grid-template: 
         "header" 60px
-        "navbar" 240px
+        "navbar" 260px
         "main" 2120px
         "footer" 300px;
     }
     
+}
+
+/*GRID CONTACTO-------------------------------*/
+
+.grid-container-contacto >* {
+    text-align: center;
+}
+
+.grid-container-contacto{
+    display: grid;
+    grid-template:
+         "header" 60px
+         "navbar" 260px
+         "main" 620px
+         "footer" 180px;
+
+}
+
+@media (min-width: 460px){
+    .grid-container-contacto{
+        grid-template:
+        "header" 60px
+        "navbar" 260px
+        "main" 1520px
+        "footer" 400px;
+    }
+}
+
+@media (min-width: 590px){
+    .grid-container-contacto{
+        grid-template:
+        "header" 60px
+        "navbar" 260px
+        "main" 1450px
+        "footer" 395px
+    }
+}
+
+@media (min-width: 800px){
+    .grid-container-contacto{
+        grid-template:
+        "header" 60px
+        "navbar" 260px
+        "main" 1350px
+        "footer" 390px
+    }
+}
+
+@media (min-width: 1050px){
+    .grid-container-contacto{
+        grid-template: 
+        "header" 60px
+        "navbar" 260px
+        "main" 1350px
+        "footer" 400px
+    }
+}
+
+@media (min-width: 1400px){
+        .grid-container-contacto{
+            grid-template: 
+            "header" 60px
+            "navbar" 260px
+            "main" 1350px
+            "footer" 400px
+        }
 }
 
 /*GRID RENTAR--------------------------------*/
@@ -713,7 +711,7 @@ h2{font-size: 0.9em;}
     grid-template:
          "header" 60px
          "navbar" 260px
-         "main" 4000px
+         "main" 1000px
          "footer" 280px;
 
 }
@@ -723,8 +721,8 @@ h2{font-size: 0.9em;}
         grid-template:
         "header" 60px
         "navbar" 240px
-        "main" 2800px
-        "footer" 280px;
+        "main" 1300px
+        "footer" 400px;
     }
 }
 
@@ -749,13 +747,11 @@ h2{font-size: 0.9em;}
 }
 
 @media (min-width: 1400px){
-    @media (min-width: 1150px){
         .grid-container-rentar{
             grid-template: 
             "header" 60px
-            "navbar" 240px
-            "main" 3950px
-            "footer" 550px;
-        }
+            "navbar" 260px
+            "main" 1250px
+            "footer" 400px;
     }
 }
